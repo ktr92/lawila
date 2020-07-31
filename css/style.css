@@ -1,13 +1,15 @@
 body {
-	font-family: 'HelveticaNeueCyr', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
-	color: #000;
+	color: #141414;
 	min-width: 320px;
 	padding: 0 !important;
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 	padding: 0 !important;
 	transition: all 0.3s;
+	font-weight: 400;
+	line-height: 1.2;
 }
 
 * {
@@ -118,6 +120,7 @@ img {
 #header {
 	height: 84px;
 	box-shadow:  0px -2px 5px 3px #ccc;
+	position: relative;
 }
 .header__menubtn {
 	height: 100%;
@@ -212,6 +215,289 @@ img {
   text-transform: uppercase;
 	white-space: nowrap;
 }
+
+
+.mainblock__text1 {
+  font-size: 20px;
+  color: #141414;
+  text-transform: uppercase;
+	margin-bottom: 0px;
+	display: block;
+  
+}
+
+.mainblock__text2 {
+	font-family: 'HelveticaNeueCondensedBlack';
+  font-size: 81px;
+  color: #0a79ae;
+  text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 20px;
+	display: block;
+}
+
+
+
+.mainblock__content {
+	max-width: 450px;
+}
+
+.mainblock__text3 {
+  font-size: 28px;
+  color: #141414;
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+.mainblock__text3:after {
+	content: "";
+	width: 75px;
+  height: 5px;
+  background: #e83423;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.mainblock__text4 {
+  font-size: 19px;
+ color: #141414;
+ line-height: 1.3;
+ margin-bottom: 20px;
+}
+.linkpdf {
+	display: table;
+}
+.mainblock__pdf a {
+  font-size: 16px;
+ color: #141414;
+ padding-left: 53px;
+ background-image: url(/images/pdf.png);
+ background-repeat: no-repeat;
+ background-size: initial;
+ background-position: left center;
+ max-width: 270px;
+ min-height: 42px;
+display: block;
+    align-items: center;
+	display: table-cell;
+    padding: 10px 0 10px 53px;
+	
+}
+
+.mainblock__pdf a span {
+	border-bottom: 1px dashed #0a79ae;
+	padding-top: 5px;
+}
+
+.mainblock__pdf a:hover span {
+	border-bottom: none;
+
+}
+
+.mainblock {
+	 background-image: url(/images/bg1.jpg);
+ background-repeat: no-repeat;
+ background-size: initial;
+ background-position:  center;
+ height: 680px;
+ display: flex;
+ align-items: center;
+}
+
+.fitches__title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+
+
+.fitches__text {
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+ 
+}
+
+.fitches__img {
+	height: 115px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fitches__item {
+	margin-bottom: 20px;
+	width: 33%;
+
+}
+.fitches__content {
+	max-width: 210px;
+	margin: auto;
+}
+.fitches__items {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.fitches.col-md-7 {
+	width: 61.333333%;
+}
+
+
+.fitches.col-md-5 {
+	 width: 38.666667%;
+}
+
+
+
+
+.check label {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	padding-left: 25px;
+	font-weight: 500;
+	  font-size: 12px;
+	  line-height: 1.167;
+	  color: #666666;
+	 
+
+}
+
+.check label a {
+	color: #666666;
+	border-bottom: 1px solid #666666;
+
+}
+
+.check label a:hover {
+	border-bottom: none;
+}
+
+.check input[type=checkbox] {
+	display: none;
+}
+
+.check label:before {
+	background: url(/images/checkbox_black.png) left center no-repeat;
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 0;
+}
+
+.check input[type=checkbox]:checked+label:before {
+	background: url(/images/checkbox_black_checked.png) left center no-repeat;
+}
+
+.form textarea {
+	resize: none;
+	background: none;
+	border-radius: 10px;
+	border: 1px solid #b1b1b1;
+	color: #000;
+	font-size: 16px;
+	font-weight: 300;
+	width: 100%;
+	max-width: 100%;
+		padding: 15px;
+}
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form input {
+	background: none;
+	border-radius: 10px;
+	border: 1px solid #b1b1b1;
+	color: #000;
+	font-size: 16px;
+	font-weight: 300;
+	width: 100%;
+	max-width: 100%;
+	height: 46px;
+	line-height: 46px;
+	padding: 0 15px;
+}
+
+input[type="text"].input-error,
+input[type="tel"].input-error,
+input[type="email"].input-error,
+textarea.input-error,
+input[type="text"].input-error {
+
+	border: 1px solid #cc0000;
+}
+
+input[type="text"]:disabled,
+input[type="tel"]:disabled,
+input[type="email"]:disabled,
+textarea:disabled,
+input[type="text"]:disabled,
+input:disabled {
+	background: #e7e7e7;
+	color: #333;
+	border: 1px solid #e7e7e7;
+}
+
+.form inputr::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #141414;
+}
+
+.form input::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #141414;
+}
+
+.form input:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #141414;
+}
+
+.form input:-moz-placeholder {
+	/* Firefox 18- */
+	color: #141414;
+}
+
+.form__input {
+	margin: 20px 0;
+}
+
+.form__title {
+  font-size: 28px;
+  font-family: 'HelveticaNeueCondensedBlack';
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.form { 
+	padding: 40px 60px;
+	background: #fff;
+}
+
+.fitches__form {
+	    box-shadow: 1px 1px 28px 1px #ccc;
+	max-width: 455px;
+	float: right;
+	margin-top: -186px;
+}
+
+.fitchesblock {
+	padding: 30px 0 90px 0;
+}
+
+
+
+
+
+
 
 
 
@@ -364,45 +650,6 @@ body.modal-open {
 	margin-bottom: 0;
 }
 
-input[type="text"].input-error,
-input[type="tel"].input-error,
-input[type="email"].input-error,
-textarea.input-error,
-input[type="text"].input-error {
-	color: #cc0000;
-	border: 1px solid #cc0000;
-}
-
-input[type="text"]:disabled,
-input[type="tel"]:disabled,
-input[type="email"]:disabled,
-textarea:disabled,
-input[type="text"]:disabled,
-input:disabled {
-	background: #e7e7e7;
-	color: #333;
-	border: 1px solid #e7e7e7;
-}
-
-.modal__form input.input-error::-webkit-input-placeholder {
-	/* Chrome/Opera/Safari */
-	color: #cc0000;
-}
-
-.modal__form input.input-error::-moz-placeholder {
-	/* Firefox 19+ */
-	color: #cc0000;
-}
-
-.modal__form input.input-error:-ms-input-placeholder {
-	/* IE 10+ */
-	color: #cc0000;
-}
-
-.modal__form input.input-error:-moz-placeholder {
-	/* Firefox 18- */
-	color: #cc0000;
-}
 
 @media screen and (min-width: 992px) {
 	.modal:before {
