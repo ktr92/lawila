@@ -583,7 +583,8 @@ input:disabled {
 	top: 0;
 	left: 0;
 	width: 100%;
-	
+	background: #fff;
+	z-index: 99;
 	animation: smoothScroll 0.4s forwards;
 	padding: 7px 0;
 }
@@ -721,6 +722,255 @@ body.modal-open {
 	margin-bottom: 0;
 }
 
+.servicesblock {
+	background-color: #e7eaee;
+	background-image: url(/images/bg2.png);
+	background-position: center;
+	background-size: initial;
+	background-repeat: no-repeat;
+}
+
+.services__num {
+  font-size: 48px;
+  font-family: 'HelveticaNeueCondensedBlack';
+  color: rgb(10, 121, 174);
+  text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.services__text {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+	color: #000;
+}
+
+.services__item {
+
+	width: 25%;
+	margin: 25px auto;
+}
+.services__content {
+	max-width: 230px;
+	margin: auto;
+}
+.services__items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-bottom: 95px;
+}
+.title_center h2 {
+	text-align: center;
+	font-size: 60px;
+}
+.servicesblock {
+	padding: 30px 0 75px;
+}
+.offertext {
+	text-align: center;
+  font-size: 30px;
+
+  line-height: 1.2;
+ 
+
+}
+
+.red {
+	color: #e83423;
+}
+.pricing {
+  margin-bottom: 10px;
+}
+/* .pricing:after {
+  content: '................................................................................................................................................................................................................................................................................................................';
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+  color: #000;
+  font-size: 12px;
+} */
+.pricing__prop {
+  float: left;
+  font-size: 18px;
+  text-align: left;
+ 
+}
+.pricing__dots {
+	 border-bottom: 1px dotted #000;
+	 float: left;
+}
+.pricing__value {
+  float: right; 
+
+  font-size: 18px;
+  text-align: left;
+
+	padding-left: 10px;
+}
+
+.pricing {
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.prices__info {
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.2;
+	color: #666666;
+}
+
+.prices__info span {
+	font-size: 16px;
+}
+
+.pricingblock .col-md-7 {
+	width: 51%;
+}
+
+.pricingblock .col-md-5 {
+	width: 49%;
+}
+
+.prices {
+	padding: 5px 0;
+}
+
+.pricing__prop span {
+    background: #fff;
+
+    padding-right: 5px;
+    position: relative;
+}
+span.pricing__fordots {
+	 background: #fff;
+    display: inline-block;
+    padding-left: 5px;
+    position: relative;
+		width: 120px;
+		    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.pricing__dots {
+	width: 100%;
+	margin-top: -5px;
+}
+
+.pricingblock {
+	padding: 20px 0 50px 0;
+}
+.pricings {
+	margin-bottom: 20px;
+}
+ .serts__content  {
+	 padding: 45px 0;
+	 position: relative;
+
+ }
+.serts__slide .serts__content img {
+	opacity: 0.3;
+	width: 175px;
+}
+
+.serts__slide.slick-current.slick-active .serts__content img {
+	width: 225px;
+    opacity: 1;
+    position: absolute;
+    top: 1px;
+    margin-left: -27px;
+    z-index: 9;
+    max-width: initial;
+}
+.serts__slidercontainer {
+	position: relative;
+
+}
+.serts__slide a { pointer-events: none; }
+.serts__slide.slick-current.slick-active a { pointer-events: auto; }
+
+
+.serts__left.slick-arrow {
+    width: 145px;
+    height: 247px;
+    position: absolute;
+    top: 45px;
+    left: 49px;
+	cursor: pointer;
+}
+
+
+.serts__left.slick-arrow img {
+   position: absolute;
+    left: -999px;
+    right: -999px;
+    margin: auto;
+    top: -999px;
+    bottom: -999px;
+}
+
+.serts__right.slick-arrow {
+    width: 145px;
+    height: 247px;
+    position: absolute;
+    top: 45px;
+    right: 49px;
+	cursor: pointer;
+}
+
+
+.serts__right.slick-arrow img {
+   position: absolute;
+    left: -999px;
+    right: -999px;
+    margin: auto;
+    top: -999px;
+    bottom: -999px;
+}
+
+.serts__mask-left {
+	width: 60px;
+    height: 247px;
+    position: absolute;
+    top: 45px;
+    left: -11px;
+	cursor: pointer;
+	background:#fff;
+	
+}
+
+.serts__mask-right {
+	width: 60px;
+    height: 247px;
+    position: absolute;
+    top: 45px;
+    right: -11px;
+	cursor: pointer;
+	background:#fff;
+	
+}
+.sert__text {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+	max-width: 500px;
+	margin: auto;
+		margin-bottom: 45px;
+
+}
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
 	.modal:before {
@@ -761,7 +1011,15 @@ body.modal-open {
 
 
 @media (max-width: 1279px) {
-	
+	.pricing__prop {
+		width: 60%;
+	}
+	.pricing {
+		margin-bottom: 15px;
+		display: inline-block;
+		width: 100%;
+	}
+
 }
 
 @media (max-width: 991px) {

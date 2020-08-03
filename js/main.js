@@ -25,16 +25,18 @@ $(document).ready(function() {
     $("input[type=tel]").mask("+7 (999) 999-99-99");
 
     try {
-        $('.slider').slick({
+        $('.serts__slider').slick({
             infinite: true,
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 3000,
             arrows: true,
-            dots: true,
-            prevArrow: $('.slidernav__left'),
-            nextArrow: $('.slidernav__right'),
+            dots: false,
+			 centerMode: true,
+		 speed:700,
+            prevArrow: $('.serts__left'),
+            nextArrow: $('.serts__right'),
 
         });
 
@@ -45,6 +47,8 @@ $(document).ready(function() {
         'wrapAround': true
     });
 
+
+	$('.serts__slide.slick-slide.slick-cloned a').removeAttr('data-lightbox');
 });
 
 $(document).ready(function() {
