@@ -10,12 +10,6 @@ $(function() {
 
 
 
-$(window).scroll(function() {
-    scroll = $(window).scrollTop();
-
-    if (scroll >= 700) $('#header').addClass('fixed');
-    else $('#header').removeClass('fixed');
-});
 
 
 
@@ -41,6 +35,26 @@ $(document).ready(function() {
         });
 
     } catch (err) {}
+	$('.serts__slide.slick-slide.slick-cloned a').removeAttr('data-lightbox');
+	
+	try {
+        $('.reviews__slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            arrows: true,
+            dots: false,
+			 centerMode: false,
+		 speed:700,
+            prevArrow: $('.reviews__left'),
+            nextArrow: $('.reviews__right'),
+
+        });
+
+    } catch (err) {}
+	$('.reviews__slide.slick-slide.slick-cloned a').removeAttr('data-lightbox');
 
     lightbox.option({
         'resizeDuration': 20,
@@ -48,7 +62,7 @@ $(document).ready(function() {
     });
 
 
-	$('.serts__slide.slick-slide.slick-cloned a').removeAttr('data-lightbox');
+	
 });
 
 $(document).ready(function() {
