@@ -5,6 +5,16 @@ $(function() {
         $(this).toggleClass('active');	
         $('.header__mainmenu').animate({'width': 'toggle'});
     });
+	
+	$('.mobilemenu').click(function(event) {      
+        $('.header__menu').slideToggle();
+    });
+	
+	$('.closemenu').click(function(event) {      
+        $('.header__menu').slideToggle();
+    });
+	
+	
 	    
 });
 
