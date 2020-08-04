@@ -1848,22 +1848,62 @@ text-align: left;
 		display: block;
 		margin-bottom: 0;
 	}
+	.pricingblock {
+		padding: 5px 0 20px 0;
+	}
+	.pricingblock .col-md-7 {
+		width: 100%;
+	}
+	
+	.pricingblock .col-md-5 {
+		width: 100%;
+	}
+	
+.pricing__prop span {
+  font-size: 16px;
+ 
+}
+.pricing__prop {
+	width: 100%;
+}
 	
 	
+	.pricing__dots {
+		display: none;
+	}
+	.pricing__value {
+		font-size: 18px;
 	
+		padding-left: 0;
+		float: none;
+		display: block;
+	}
+	span.pricing__fordots {
+		position: initial;
+		padding: 0;
+		font-weight: bold;
+	}
 	
+	.pricing__prop span br {
+		display: none;
+	}
+	.pricings {
+    margin-bottom: 0;
+}
+.prices {
+	margin-bottom: 35px;
+}
+.sert__text {
+    font-size: 14px;
+}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	.serts__slidercontainer {
+		width: 320px;
+		margin: auto;
+	}
+	.serts__right.slick-arrow img, .serts__left.slick-arrow img {
+		    width: 17px;
+	}
 	
 	
 	
