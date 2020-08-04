@@ -1215,13 +1215,125 @@ font-family: 'HelveticaNeueCondensedBlack';
 	margin-right: 30px;
 }
 
+.footermain__items {
+	display: flex;
+
+	justify-content: space-between;
+}
+
+.footermain__left {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__main {
+	background: #0a79ae;
+	padding: 45px 0 25px 0;
+}
+
+.requisites {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 12px;
+}
+
+.footermain__requisites {
+	width: 385px;
+}
+.footermain__logo {
+	margin-right: 55px;
+	width: 219px;
+}
+
+.footermain__title {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.footermain__contact {
+	margin-bottom: 20px;
+}
+.footermain__contact span, .footermain__contact span a {
+	color: #fff;
+	font-size: 13px;
+}
+.footermain__contact_tel {
+	padding-left: 30px;
+	background-image: url(/images/tel.png);
+	background-position: center left 2px;
+	background-size: initial;
+	background-repeat: no-repeat;
+}
+
+.footermain__contact_email {
+	padding-left: 30px;
+	background-image: url(/images/meil.png);
+	background-position: center left;
+	background-size: initial;
+	background-repeat: no-repeat;
+}
+
+.footermain__contact_address {
+	padding-left: 30px;
+	background-image: url(/images/location.png);
+	background-position: top 3px left 3px;
+	background-size: initial;
+	background-repeat: no-repeat;
+}
+
+.footermain__right {
+	width: 235px;
+}
 
 
+.footerbottom__items {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
+.footerbottom, .footerbottom a {
+	color: #84c3e1;
+	font-size: 14px;
+	line-height: 1;
+}
+.footerbottom a {
+	font-size: 13px;
+}
+.footer__bottom {
+	padding: 15px 0;
+	background: #096a99;
+}
 
+.footerbottom__policy a {
+	border-bottom: 1px solid #84c3e1;
+}
+.footerbottom__policy a:hover {
+	border-bottom: none;
+}
+#footer > .container {
+	position: relative;
+}
+.footerimg {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    right: 305px;
+}
 
+.footerbottom__subitem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
-
+.footerbottom__copy {
+	width: 219px;
+	margin-right: 55px;
+}
 
 
 @media screen and (min-width: 992px) {
@@ -1333,4 +1445,4 @@ font-family: 'HelveticaNeueCondensedBlack';
 
 @media (max-width: 767px) {
 	
-}
+}<30px></30px>
