@@ -1754,6 +1754,7 @@ font-family: 'HelveticaNeueCondensedBlack';
 	}
 	.mainblock__mask {
 		background: rgba(255,255,255,0.5);
+		width: 100%;
 	}
 	.mainblock__pdf a {
 		    font-size: 10px;
@@ -1771,10 +1772,17 @@ font-family: 'HelveticaNeueCondensedBlack';
     padding: 10px 0 10px 36px;
     font-weight: 500;
 	}
-	
+	.about .image {
+    margin-top: 15px;
+    text-align: center;
+}
+.pageform__item_text {
+	justify-content: center;
+}
 	.fitches__form {
 		margin-top: 0;
 		float: none;
+		margin: auto;
 	}
 	.fitchesblock {
 		padding: 15px 0;
@@ -1970,7 +1978,11 @@ text-align: left;
     margin: auto;
 	
 	} */
-
+.serts__slidercontainer {
+    position: relative;
+    width: 320px;
+    margin: auto;
+}
  .serts__left.slick-arrow {
     width: 75px;
     height: 147px;
@@ -2063,7 +2075,7 @@ text-align: left;
 	    margin-bottom: 0;
 }
 .serts__slider {
-	margin: 10px 0;
+	    margin: 10px auto;
 }
 .title_white {
     font-size: 24px;
@@ -2107,7 +2119,7 @@ text-align: left;
 }
 
 .reviews__img {
-	margin: 10px 0;
+	margin: 10px auto;
 }
 .pageform__inputs {
 	display: block;
