@@ -122,6 +122,21 @@ img {
 	box-shadow:  0px -2px 5px 3px #ccc;
 	position: relative;
 }
+#header.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 99;
+	animation: smoothScroll 0.4s forwards;
+	padding: 7px 0;
+	height: 62px;
+}
+
+#header.fixed .header__logo img {
+    height: 50px;
+}
 .header__menubtn {
 	height: 100%;
 	margin-left: 25px;
@@ -297,7 +312,7 @@ display: block;
 }
 
 .mainblock__pdf a span {
-	border-bottom: 1px dashed #0a79ae;
+	border-bottom: 1px dashed #141414;
 	padding-top: 5px;
 }
 
@@ -778,6 +793,7 @@ body.modal-open {
 
 	width: 25%;
 	margin: 25px auto;
+	    height: 170px;
 }
 .services__content {
 	max-width: 230px;
@@ -1608,18 +1624,13 @@ font-family: 'HelveticaNeueCondensedBlack';
 		display: block;
 	}
 	.services__item {
-		width: 100%;
+		width: 33%;
+		    height: auto;
 	}
 	.mainblock__text2 {
 		font-size: 51px;
 	}
-	.footermain__items {
-		display: block;
-	}
-		
-	.footerbottom__items {
-		display: block;
-	}
+	
 	
 	.btn_borderbg {
 		font-size: 15px;
@@ -1628,12 +1639,7 @@ font-family: 'HelveticaNeueCondensedBlack';
 		font-size: 25px;
 	}
 		
-	.fitches__item {
-		width: 100%;
-	}
-	.fitches__items {
-		display: block;
-	}
+	
 	
 	.header__menu {
 		position: absolute;
@@ -1758,12 +1764,9 @@ font-family: 'HelveticaNeueCondensedBlack';
 	.mainblock__items {
 		padding-bottom: 65px;
 	}
-	.mainblock__mask {
-		background: rgba(255,255,255,0.5);
-		width: 100%;
-	}
+
 	.mainblock__pdf a {
-		    font-size: 10px;
+		    font-size: 12px;
     color: #141414;
     padding-left: 19px;
     background-image: url(/images/pdf.png);
@@ -1785,17 +1788,7 @@ font-family: 'HelveticaNeueCondensedBlack';
 .pageform__item_text {
 	justify-content: center;
 }
-	.fitches__form {
-		margin-top: 0;
-		float: none;
-		margin: auto;
-	}
-	.fitchesblock {
-		padding: 15px 0;
-	}
-	.fitches__content {
-		max-width: 320px;
-	}
+	
 	
 	.form {
 		padding: 30px 15px 1px 15px;
@@ -1923,10 +1916,7 @@ text-align: left;
 	.nowrap {
 		white-space: nowrap;
 	}
-	.services__items {
-		display: block;
-		margin-bottom: 0;
-	}
+
 	.pricingblock {
 		padding: 5px 0 5px 0;
 	}
@@ -2183,7 +2173,63 @@ input[type="text"], input[type="tel"], input[type="email"], input, textarea {
 .pageformblock {
 	padding: 20px 0 15px 0;
 }
-.footermain__logo {
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.fitches__title {
+		font-size: 16px;
+	}
+	.fitches__text {
+		font-size: 13px; 
+	}
+	.fitches__form {
+	
+		margin-top: -90px;
+	}
+	.services__text {
+		
+		font-size: 13px;
+	}
+	.footerimg {
+		
+		right: 207px;
+		width: 143px;
+	}
+}
+
+@media (max-width: 767px) {
+		.mainblock__mask {
+		background: rgba(255,255,255,0.5);
+		width: 100%;
+	}
+	
+	.fitches__item {
+		width: 100%;
+	}
+	.fitches__items {
+		display: block;
+	}
+	.fitches__form {
+		margin-top: 0;
+		float: none;
+		margin: auto;
+	}
+	.fitchesblock {
+		padding: 15px 0;
+	}
+	.fitches__content {
+		max-width: 320px;
+	}
+	.services__item {
+		width: 100%;
+	}
+		.services__items {
+		display: block;
+		margin-bottom: 0;
+	}
+	.footermain__logo {
 	display: none;
 }
 .footermain__items {
@@ -2269,11 +2315,14 @@ body {
 .footer__main .container {
 	padding: 0;
 }
-
+#header.fixed .header__logo img {
+    height: 37px;
 }
-
-
-
-@media (max-width: 767px) {
-	
+		
+	.footerbottom__items {
+		display: block;
+	}
+	.mainblock__pdf a {
+    font-size: 12px;
+	}
 }

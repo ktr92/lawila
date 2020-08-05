@@ -14,13 +14,18 @@ $(function() {
         $('.header__menu').slideToggle();
     });
 	
-	
-	    
+
 });
 
 
 
+	$(window).scroll(function() {
+		scroll = $(window).scrollTop();
 
+		if (scroll >= 700) $('#header').addClass('fixed');
+		else $('#header').removeClass('fixed');
+	});
+	    
 
 
 
@@ -114,57 +119,13 @@ $(document).ready(function() {
 $(document).ready(function() {
     jQuery("a.scrollto").click(function() {
         elementClick = jQuery(this).attr("href")
-        destination = jQuery(elementClick).offset().top - 90;
+        destination = jQuery(elementClick).offset().top - 30;
         jQuery("html:not(:animated),body:not(:animated)").animate({
             scrollTop: destination
         }, 1100);
         return false;
     });
 });
-
-
-
-
-
-if ($(window).width() <= 767) {
-    try {
-        $('.team__items').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            autoplay: false,
-            autoplaySpeed: 3000,
-            arrows: true,
-            dots: false,
-            prevArrow: $('.team__left'),
-            nextArrow: $('.team__right'),
-            responsive: [{
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
-
-    } catch (err) {}
-};
-
-
 
 
 
